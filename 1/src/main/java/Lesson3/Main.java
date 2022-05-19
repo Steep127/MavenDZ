@@ -1,5 +1,6 @@
 package Lesson3;
 
+import Lesson4.TriangleFunction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +11,11 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("==headless");
+
+        TriangleFunction triangleFunction = new TriangleFunction(3, 4, 5);
+        System.out.println("ОНООООООООО");
+        triangleFunction.triangleArea();
+        System.out.println("ОНООООООООО");
 
 
        WebDriver driver = new ChromeDriver();
